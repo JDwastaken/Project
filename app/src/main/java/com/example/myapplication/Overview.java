@@ -1,4 +1,6 @@
 package com.example.myapplication;
 
-public class Overview {
+import androidx.fragment.app.Fragment;
+
+public class Overview extends Fragment {
 }
