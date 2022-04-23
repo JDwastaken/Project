@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdkVersion 31
 
     defaultConfig {
         applicationId "com.example.myapplication"
@@ -32,10 +32,19 @@ android {
 }
 
 dependencies {
-
-    implementation 'com.mikhaellopez:circularprogressbar:3.1.0'
-    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'com.aurelhubert:ahbottomnavigation:2.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.github.j4velin.colorpicker:colorpicker:1.20.6'
+    implementation 'com.github.j4velin.EazeGraph:EazeGraph:1.0.3'
+    implementation 'com.google.android.apps.dashclock:dashclock-api:2.0.0'
+    implementation 'com.github.j4velin.colorpicker:colorpicker:1.20.6'
+    implementation 'com.github.j4velin.EazeGraph:EazeGraph:1.0.3'
+    implementation 'com.google.android.apps.dashclock:dashclock-api:2.0.0'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
     testImplementation 'junit:junit:4.13.2'
