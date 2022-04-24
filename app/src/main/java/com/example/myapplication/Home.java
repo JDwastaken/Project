@@ -326,10 +326,11 @@ public class Home extends Fragment implements SensorEventListener {
     }
     @Override
     public void onSensorChanged(SensorEvent event) {
-        if(event.values[0]>Integer.MAX_VALUE || event.values[0] == 0){
+        if(event.values[0] > Integer.MAX_VALUE || event.values[0] == 0){
             todaysOffset = -(int) event.values[0];
             Database db= Database.getInstance(getActivity());
             db.insertNewDay(Util.getToday(),(int)event.values[0]);
+            db.removeNegativeEntries();
             db.close();
         }
         boot = (int)event.values[0];

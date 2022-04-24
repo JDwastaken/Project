@@ -1,4 +1,4 @@
-package com.example.demo2;
+package com.example.myapplication;
 
 import android.app.Dialog;
 import android.graphics.Color;
@@ -20,11 +20,9 @@ import java.util.Locale;
 
 
 public class TotalSteps extends Fragment {
-    ImageView backArrow, levelImg, three, seven, ten, fourteen, twenty, thirty, fourty, sixty;
-    private CardView more;
+    ImageView backArrow, levelImg, three, seven, ten, fourteen, twenty, thirty, forty, sixty;
     TextView stepsLeft,levelText,imgText;
-    public static int totalSteps=0,goal=3000;
-    private int todaysOffset, totalStart, boot;
+    public static int totalSteps = 0, goal = 3000;
     public static NumberFormat format = NumberFormat.getInstance(Locale.getDefault());
     ProgressBar progressBar;
 
@@ -49,9 +47,9 @@ public class TotalSteps extends Fragment {
         fourteen = view.findViewById(R.id.fourteen);
         twenty = view.findViewById(R.id.twenty);
         thirty = view.findViewById(R.id.thirty);
-        fourty = view.findViewById(R.id.fourty);
+        forty = view.findViewById(R.id.fourty);
         sixty = view.findViewById(R.id.sixty);
-        more = view.findViewById(R.id.more);
+        CardView more = view.findViewById(R.id.more);
         backArrow.setOnClickListener(v -> loadAchievementFragment());
         loadTotalSteps();
         loadImages();
@@ -64,9 +62,9 @@ public class TotalSteps extends Fragment {
     }
     private void loadTotalSteps(){
         Database db=Database.getInstance(getActivity());
-        todaysOffset = db.getSteps(Util.getToday());
-        boot = db.getCurrentSteps();
-        totalStart = db.getTotalWithoutToday();
+        int todaysOffset = db.getSteps(Util.getToday());
+        int boot = db.getCurrentSteps();
+        int totalStart = db.getTotalWithoutToday();
         totalSteps = todaysOffset + boot + totalStart;
     }
     private void loadImages(){

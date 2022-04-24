@@ -1,4 +1,4 @@
-package com.example.demo2;
+package com.example.myapplication;
 
 import android.annotation.TargetApi;
 import android.app.Notification;
@@ -43,9 +43,7 @@ public class Wrapper {
         try {
             context.startActivity(intent);
         } catch (ActivityNotFoundException e) {
-            Toast.makeText(context,
-                    "Settings not found - please search for the notification settings in the Android settings manually",
-                    Toast.LENGTH_LONG).show();
+            Toast.makeText(context,R.string.notification_setting_notice, Toast.LENGTH_LONG).show();
         }
     }
 }

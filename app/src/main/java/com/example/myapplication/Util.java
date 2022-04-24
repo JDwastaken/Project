@@ -4,7 +4,7 @@ import java.util.Calendar;
 
 public class Util {
     public static long getToday(){
-        Calendar c= Calendar.getInstance();
+        Calendar c = Calendar.getInstance();
         c.setTimeInMillis(System.currentTimeMillis());
         c.set(Calendar.HOUR_OF_DAY,0);
         c.set(Calendar.MINUTE,0);
