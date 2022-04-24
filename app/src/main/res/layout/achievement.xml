@@ -15,9 +15,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed"
-                android:text="You have Achieved Level"
-                android:textColor="#000"
-                android:textSize="25dp"
+                android:text="@string/you_have_achieved"
+                android:textColor="@color/black"
+                android:textSize="25sp"
                 android:textStyle="bold">
 
         </TextView>
@@ -31,8 +31,8 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed"
                 android:text="1"
-                android:textColor="#000"
-                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:textSize="25sp"
                 android:textStyle="bold">
 
         </TextView>
@@ -55,8 +55,8 @@
             android:layout_gravity="center_horizontal"
             android:fontFamily="sans-serif-condensed"
             android:text="@string/congratulation"
-            android:textColor="#000"
-            android:textSize="35dp"
+            android:textColor="@color/black"
+            android:textSize="35sp"
             android:textStyle="bold">
     </TextView>
     <Space
@@ -68,9 +68,9 @@
             android:id="@+id/ok"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="OK"
-            android:textColor="#000"
-            android:textSize="30dp"
+            android:text="@string/ok"
+            android:textColor="@color/black"
+            android:textSize="30sp"
             android:textStyle="bold">
 
     </Button>

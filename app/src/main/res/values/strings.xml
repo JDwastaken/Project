@@ -63,4 +63,5 @@
     <string name="total_last_7_days">Total Steps Taken In The Last 7 Days</string>
     <string name="average_last_7_days">Average Steps Taken In The Last 7 Days</string>
     <string name="more_steps_to_reach_next_level">more steps to reach next level</string>
+    <string name="LEVEL">LEVEL</string>
 </resources>

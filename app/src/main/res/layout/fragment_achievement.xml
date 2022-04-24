@@ -10,7 +10,6 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="#E3E2E2">
-
         <ImageView
                 android:id="@+id/backArrow"
                 android:layout_width="50dp"
@@ -24,10 +23,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="10dp"
-                android:gravity="left"
+                android:gravity="start"
                 android:text="@string/achievements"
-                android:textColor="#000"
-                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:textSize="25sp"
                 android:textStyle="bold">
         </TextView>
     </androidx.appcompat.widget.Toolbar>
@@ -60,9 +59,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="LEVEL"
-                        android:textColor="#000"
-                        android:textSize="25dp"
+                        android:text="@string/LEVEL"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
                         android:textStyle="bold">
                 </TextView>
 
@@ -72,8 +71,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:text="1"
-                        android:textColor="#000"
-                        android:textSize="25dp"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
                         android:textStyle="bold">
 
                 </TextView>
@@ -89,7 +88,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:text="3000"
-                        android:textSize="20dp">
+                        android:textSize="20sp">
 
                 </TextView>
                 <Space
@@ -101,7 +100,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/more_steps_to_reach_next_level"
-                        android:textSize="20dp">
+                        android:textSize="20sp">
                 </TextView>
 
             </LinearLayout>
@@ -110,7 +109,7 @@
                     android:id="@+id/progressBar"
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="333dp"
-                    android:layout_height="30dp"
+                    android:layout_height="0dp"
                     android:layout_marginStart="10dp"
                     android:layout_weight="1" />
         </LinearLayout>
@@ -136,9 +135,9 @@
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="25sp"
                         android:layout_marginStart="10dp"
-                        android:textColor="#000"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:text="@string/levels">
                 </TextView>
@@ -150,8 +149,7 @@
                         android:text="@string/more"
                         android:gravity="center_horizontal"
                         android:textColor="#787676"
-                        android:textSize="20dp">
-
+                        android:textSize="20sp">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -199,7 +197,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/level_3"
                             android:layout_marginStart="15dp"
-                            android:textSize="20dp">
+                            android:textSize="20sp">
                     </TextView>
 
                 </LinearLayout>
@@ -220,7 +218,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/level_4"
                             android:layout_marginStart="15dp"
-                            android:textSize="20dp">
+                            android:textSize="20sp">
                     </TextView>
                 </LinearLayout>
                 <LinearLayout
@@ -240,7 +238,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/level_5"
                             android:layout_marginStart="15dp"
-                            android:textSize="20dp">
+                            android:textSize="20sp">
                     </TextView>
                 </LinearLayout>
             </LinearLayout>
