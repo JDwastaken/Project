@@ -29,7 +29,6 @@ public class TotalSteps extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -91,7 +90,7 @@ public class TotalSteps extends Fragment {
             seven.setBackgroundColor(Color.BLUE);
             stepsLeft.setText(format.format(10000 - totalSteps));
             levelText.setText("3");
-            imgText.setText("Level 3");
+            imgText.setText(R.string.level_3);
         }
         if(totalSteps >= 10000 && totalSteps < 14000){
             levelImg.setBackgroundColor(Color.BLUE);
@@ -102,7 +101,7 @@ public class TotalSteps extends Fragment {
             ten.setBackgroundColor(Color.BLUE);
             stepsLeft.setText(format.format(14000 - totalSteps));
             levelText.setText("4");
-            imgText.setText("Level 4");
+            imgText.setText(R.string.level_4);
         }
         if(totalSteps>=14000 && totalSteps<20000){
             levelImg.setBackgroundColor(Color.BLUE);
@@ -114,7 +113,7 @@ public class TotalSteps extends Fragment {
             seven.setBackgroundColor(Color.BLUE);
             ten.setBackgroundColor(Color.BLUE);
             fourteen.setBackgroundColor(Color.BLUE);
-            imgText.setText("Level 5");
+            imgText.setText(R.string.level_5);
         }
         if(totalSteps >= 20000 && totalSteps < 30000){
             levelImg.setBackgroundColor(Color.BLUE);
@@ -127,7 +126,7 @@ public class TotalSteps extends Fragment {
             ten.setBackgroundColor(Color.BLUE);
             fourteen.setBackgroundColor(Color.BLUE);
             twenty.setBackgroundColor(Color.BLUE);
-            imgText.setText("Level 6");
+            imgText.setText(R.string.level_6);
         }
         if(totalSteps >= 30000 && totalSteps < 40000){
             levelImg.setBackgroundColor(Color.BLUE);
@@ -139,7 +138,7 @@ public class TotalSteps extends Fragment {
             seven.setBackgroundColor(Color.BLUE);
             ten.setBackgroundColor(Color.BLUE);
             fourteen.setBackgroundColor(Color.BLUE);
-            imgText.setText("Level 7");
+            imgText.setText(R.string.level_7);
         }
         if(totalSteps >= 40000 && totalSteps < 60000){
             levelImg.setBackgroundColor(Color.BLUE);
@@ -151,7 +150,7 @@ public class TotalSteps extends Fragment {
             seven.setBackgroundColor(Color.BLUE);
             ten.setBackgroundColor(Color.BLUE);
             fourteen.setBackgroundColor(Color.BLUE);
-            imgText.setText("Level 8");
+            imgText.setText(R.string.level_8);
         }
         if(totalSteps >= 60000 && totalSteps < 70000){
             levelImg.setBackgroundColor(Color.BLUE);
@@ -163,7 +162,7 @@ public class TotalSteps extends Fragment {
             seven.setBackgroundColor(Color.BLUE);
             ten.setBackgroundColor(Color.BLUE);
             fourteen.setBackgroundColor(Color.BLUE);
-            imgText.setText("Level 9");
+            imgText.setText(R.string.level_9);
         }
         float set=((totalSteps*100)/goal);
         int b=(int)Math.round(set);

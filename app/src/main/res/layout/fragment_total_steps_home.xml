@@ -22,8 +22,8 @@
             android:layout_marginTop="10dp"
             android:gravity="start"
             android:text="@string/levels"
-            android:textColor="#000"
-            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:textSize="25sp"
             android:textStyle="bold">
         </TextView>
     </androidx.appcompat.widget.Toolbar>
@@ -50,7 +50,7 @@
             android:layout_gravity="center"
             android:text="@string/level_1"
             android:textColor="@color/black"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:textStyle="bold">
         </TextView>
 
@@ -58,7 +58,7 @@
             android:id="@+id/progressBar"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="380dp"
-            android:layout_height="40dp"
+            android:layout_height="0dp"
             android:layout_marginStart="12dp"
             android:layout_weight="1" />
 
@@ -74,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:text="3000"
-                android:textSize="20dp">
+                android:textSize="20sp">
             </TextView>
             <Space
                 android:layout_width="4dp"
@@ -85,7 +85,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/more_steps_to_reach_level"
-                android:textSize="20dp">
+                android:textSize="20sp">
             </TextView>
             <Space
                 android:layout_width="4dp"
@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:text="1"
                 android:id="@+id/lvlText"
-                android:textSize="20dp">
+                android:textSize="20sp">
             </TextView>
         </LinearLayout>
 
