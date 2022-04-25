@@ -15,12 +15,7 @@ abstract class Statistics {
         final Dialog d = new Dialog(c);
         d.requestWindowFeature(Window.FEATURE_NO_TITLE);
         d.setContentView(R.layout.statistics);
-        d.findViewById(R.id.close).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View v) {
-                d.dismiss();
-            }
-        });
+        d.findViewById(R.id.close).setOnClickListener(v -> d.dismiss());
         Database db= Database.getInstance(c);
         Pair<Date,Integer> record= db.getRecordData();
         Calendar date = Calendar.getInstance();

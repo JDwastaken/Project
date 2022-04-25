@@ -165,7 +165,7 @@ public class TotalStepsHome extends Fragment {
             imgText.setText(R.string.level_9);
         }
         float set=((totalSteps*100)/goal);
-        int b=(int)Math.round(set);
+        int b= Math.round(set);
         progressBar.setProgress(b);
     }
     protected void DialogShow(){

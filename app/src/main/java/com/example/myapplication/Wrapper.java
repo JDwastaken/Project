@@ -32,8 +32,7 @@ public class Wrapper {
         channel.setBypassDnd(false);
         channel.setSound(null, null);
         manager.createNotificationChannel(channel);
-        Notification.Builder builder = new Notification.Builder(context, NOTIFICATION_CHANNEL_ID);
-        return builder;
+        return new Notification.Builder(context, NOTIFICATION_CHANNEL_ID);
     }
 
     public static void launchNotificationSettings(final Context context) {
