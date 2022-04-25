@@ -4,7 +4,7 @@
         android:layout_height="match_parent"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:background="#E3E2E2"
-        tools:context="com.example.pedometer.BottomNavigation.Overview">
+        tools:context="com.example.myapplication.Overview">
     <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="50dp"

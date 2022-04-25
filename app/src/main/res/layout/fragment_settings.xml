@@ -4,7 +4,7 @@
         android:layout_height="match_parent"
         android:background="#E3E2E2"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        tools:context="com.example.demo2.Settings">
+        tools:context="com.example.myapplication.Settings">
 
     <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
@@ -18,7 +18,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
                 android:text="@string/settings"
-                android:textColor="#000"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="25sp">
         </TextView>
@@ -56,7 +56,7 @@
                         android:layout_height="match_parent"
                         android:gravity="start|center"
                         android:text="@string/set_goal"
-                        android:textColor="#000"
+                        android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold">
                 </TextView>
@@ -86,7 +86,7 @@
                         android:layout_height="match_parent"
                         android:gravity="start|center"
                         android:text="@string/step_size"
-                        android:textColor="#000"
+                        android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold">
                 </TextView>
@@ -117,7 +117,7 @@
                         android:layout_height="match_parent"
                         android:gravity="start|center"
                         android:text="@string/notification"
-                        android:textColor="#000"
+                        android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold">
                 </TextView>
@@ -147,7 +147,7 @@
                         android:layout_height="match_parent"
                         android:gravity="start|center"
                         android:text="@string/language"
-                        android:textColor="#000"
+                        android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold">
                 </TextView>
