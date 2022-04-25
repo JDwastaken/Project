@@ -145,7 +145,7 @@ public class Achievement extends Fragment {
             fourteen.setBackgroundColor(Color.BLUE);
         }
         float set = ((totalSteps * 100) / goal);
-        int b = (int)Math.round(set);
+        int b = Math.round(set);
         progressBar.setProgress(b);
 
     }
