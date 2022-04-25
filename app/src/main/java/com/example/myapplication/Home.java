@@ -194,7 +194,7 @@ public class Home extends Fragment implements SensorEventListener {
                 goalReach = 700000;
             }
             float set=((totalStepsGoal * 100) / goalReach);
-            int b = (int)Math.round(set);
+            int b = Math.round(set);
             stepsLeft.setText(format.format(goalReach - totalStepsGoal));
             progressBar.setProgress(b);
         }
@@ -263,7 +263,7 @@ public class Home extends Fragment implements SensorEventListener {
                 goalReach=700000;
             }
             float set=((totalStepsGoal * 100) / goalReach);
-            int b = (int)Math.round(set);
+            int b = Math.round(set);
             stepsLeft.setText(format.format(goalReach - totalStepsGoal));
             progressBar.setProgress(b);
         }
@@ -271,7 +271,7 @@ public class Home extends Fragment implements SensorEventListener {
     private void updateBars() {
 
         SimpleDateFormat df= new SimpleDateFormat("E", Locale.getDefault());
-        BarChart barChart =(BarChart) getView().findViewById(R.id.barGraph);
+        BarChart barChart = getView().findViewById(R.id.barGraph);
         if(barChart.getData().size()>0) barChart.clearChart();
         int steps;
         float distance, stepSize = Settings.DEFAULT_STEP_SIZE;
