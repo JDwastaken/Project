@@ -88,8 +88,6 @@ public class SensorListener extends Service implements SensorEventListener {
         if (!updateIfNecessary()) {
             showNotification();
         }
-        long nextUpdate = Math.min(Util.getTomorrow(),
-                System.currentTimeMillis() + AlarmManager.INTERVAL_HOUR);
         return START_STICKY;
     }
     @Override
@@ -114,8 +112,8 @@ public class SensorListener extends Service implements SensorEventListener {
     }
 
     public static Notification getNotification(final Context context) {
-        SharedPreferences prefs = context.getSharedPreferences("StepN", Context.MODE_PRIVATE);
-        int goal = prefs.getInt("goal", 1000);
+        SharedPreferences pref = context.getSharedPreferences("StepN", Context.MODE_PRIVATE);
+        int goal = pref.getInt("goal", 1000);
         Database db = Database.getInstance(context);
         int today_offset = db.getSteps(Util.getToday());
         if (steps == 0)
